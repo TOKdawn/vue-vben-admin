@@ -1,3 +1,52 @@
+## Wip
+
+### ✨ Features
+
+- 新增图形编辑器示例
+- 新增代码编辑器(包含 Json 编辑器)
+- 新增 `JsonPreview`Json 数据查看组件
+- 表格的数据列(column)和操作列(actionColumn)的字段可以根据权限和业务来控制是否显示
+- 新增权限控制表格示例(AuthColumn.vue)
+
+### ⚡ Performance Improvements
+
+- 合并部分语言文件，减少文件数量
+
+### 🐛 Bug Fixes
+
+- 修复黑暗主题刷新闪烁的白屏
+- 修复标签页关闭其他功能失效问题
+- 修复表单已知问题
+
+## 2.3.0 (2021-04-10)
+
+## (破坏性更新) Breaking changes
+
+- 使用 `pinia` 替换 `vuex`,`vuex-module-decorators`。
+
+  - 影响，之前如果有自己使用 vuex-module-decorators，需要改造为 pinia。
+  - 原因：
+    - pinia 于 vuex5api 基本类似，且简单易懂。
+    - 后续切换 vuex5 成本非常低，也可以当作第三方状态管理库使用
+
+- 移除 `useKeyPress` 使用`vueuse`-`onKeyStroke`代替
+- 移除 `useDebounceFn` 使用`vueuse`-`useDebounceFn`代替
+- 移除 `useThrottle` 使用`vueuse`-`useThrottleFn`代替
+
+### ✨ Features
+
+- 标签页支持持久化保存
+
+### ✨ Refactor
+
+- 移除 `useElResize`
+
+### 🐛 Bug Fixes
+
+- 登录页样式修复
+- 修复菜单已知问题
+- 修复主题样式切换问题
+
 ## 2.2.0 (2021-04-06)
 
 ### ✨ Features
